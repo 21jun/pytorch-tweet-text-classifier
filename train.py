@@ -62,7 +62,8 @@ if __name__ == "__main__":
                      N_LAYERS,
                      BIDIRECTIONAL,
                      DROPOUT,
-                     PAD_IDX)
+                     PAD_IDX,
+                     pretrained_embeddings)
 
     criterion = torch.nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
